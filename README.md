@@ -5,7 +5,6 @@
 ![Python](https://img.shields.io/badge/Python-3.9+-blue?logo=python)
 ![LightGBM](https://img.shields.io/badge/Model-LightGBM-brightgreen)
 ![XGBoost](https://img.shields.io/badge/Model-XGBoost-orange)
-![License](https://img.shields.io/badge/License-MIT-yellow)
 
 ---
 
