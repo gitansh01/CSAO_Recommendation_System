@@ -6,7 +6,6 @@
 ![LightGBM](https://img.shields.io/badge/Model-LightGBM-brightgreen)
 ![XGBoost](https://img.shields.io/badge/Model-XGBoost-orange)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
-![Status](https://img.shields.io/badge/Status-Hackathon%20Submission-red)
 
 ---
 
@@ -34,26 +33,6 @@ The recommendation problem is framed as a **binary classification task**:
 - Maximize business KPIs: **AOV** and **add-on acceptance rate**
 - Ensure real-time inference within **200–300 ms**
 - Scale to handle **millions of prediction requests per day**
-
----
-
-## 📁 Repository Structure
-
-```
-CSAO-Recommendation-System/
-├── README.md
-├── requirements.txt
-├── notebooks/
-│   ├── dataset_analysis.ipynb         # EDA & data exploration
-│   └── CSAO_Recommendation_ML.ipynb   # Model training & evaluation
-├── data/
-│   └── README.md                      # Dataset download instructions
-├── models/
-│   ├── csao_lgbm_model.pkl            # Trained LightGBM model
-│   └── csao_features.pkl              # Saved feature list
-└── reports/
-    └── CSAO_Report.pdf                # Full project report
-```
 
 ---
 
@@ -170,7 +149,7 @@ Covers EDA across all 5 dataset tables:
 - **restaurant.csv** — Missing value handling, restaurant name extraction from URL links
 - **users.csv** — User data overview and null check
 
-### 2. `CSAO_Recommendation_ML.ipynb` — Model Training (10 Steps)
+### 2. `CSAO_Recommendation_ML.ipynb` — Model Training (9 Steps)
 
 | Step | Description |
 |------|-------------|
@@ -184,7 +163,6 @@ Covers EDA across all 5 dataset tables:
 | **Step 7** | Real-time recommendation simulator (`get_recommendations()` function) |
 | **Step 8** | Business metrics estimation — acceptance rate, AOV lift |
 | **Step 9** | Segment analysis — model performance by user segment |
-| **Step 10** | Save model as `csao_lgbm_model.pkl` and `csao_features.pkl` |
 
 ---
 
@@ -286,27 +264,3 @@ jupyter notebook notebooks/CSAO_Recommendation_ML.ipynb
 5. **`class_weight='balanced'`** — handles the natural class imbalance (most menu items are not ordered in any given session)
 6. **Dietary similarity filter** — veg/non-veg match prevents irrelevant cross-category suggestions
 7. **Price compatibility feature** — price difference between cart item and candidate add-on improves relevance
-
----
-
-## 🔮 Next Steps (Post-Hackathon)
-
-- Add **item-item co-occurrence** features (e.g., if biryani in cart → recommend salan)
-- Explore **Two-Tower Neural Network** for better personalization at scale
-- Run **A/B test** online vs baseline to measure real AOV lift
-- Implement **online learning** to adapt to changing user behavior in real time
-
----
-
-## 🔗 Links
-
-| Resource | Link |
-|----------|------|
-| 📂 Dataset | https://github.com/ShaikhBorhanUddin/Zomato-Data-Analysis |
-| 📓 EDA Colab Notebook | https://colab.research.google.com/drive/1HsaqNjhSE_akLOapiRKfzaz7DPkM3cNT |
-| 🤖 ML Model Colab Notebook | https://colab.research.google.com/drive/17gI9Tz3x8VXEUzVpAvnpjyTTXZ49-sQZ |
-| 📄 Project Report | See `reports/CSAO_Report.pdf` |
-
----
-
-*Built for the Zomato Hackathon. Powered by LightGBM + XGBoost.*
