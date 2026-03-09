@@ -1,6 +1,6 @@
 # 🍔 CSAO — Context-Aware Cart Super Add-On Recommendation System
 
-### Zomato Hackathon | LightGBM-Powered Real-Time Food Recommendations
+### Zomathon - The Data Hackathon | LightGBM-Powered Real-Time Food Recommendations
 
 ![Python](https://img.shields.io/badge/Python-3.9+-blue?logo=python)
 ![LightGBM](https://img.shields.io/badge/Model-LightGBM-brightgreen)
